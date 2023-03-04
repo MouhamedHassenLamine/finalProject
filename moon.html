@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+        rel="icon"
+        href="https://icon-library.com/images/galaxy-icon-png/galaxy-icon-png-14.jpg"
+      />
+    <title>Document</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./img/to-the-galaxy-low-resolution-logo-color-on-transparent-background.png" alt="logo">
+        <img src="./img/burger.png" class="burger" onclick="burgeron()">
+        <nav style="display: none;">
+            <div class="circle" style="left: 83%;">
+                <p class="pofcircle">Home</p>
+                <p class="pofcircle">Sun</p>
+                <p class="pofcircle">Earth</p>
+                <p class="pofcircle">Moon</p>
+                </div>
+            <a class="aofnav" href="./index.html"><i class="fa-solid fa-house" onmouseover="homef()"><h5>Home</h5></i></a>
+            <a class="aofnav" href="./sun.html"><i class="fa-solid fa-sun" onmouseover="sunf()"><h5 style="margin-left: 60%;">sun</h5></i></a>
+            <a class="aofnav" href="./earth.html"><i class="fa-solid fa-earth-americas" onmouseover="earthf()"><h5>earth</h5></i></a>
+            <a class="aofnav" href="./moon.html"><i class="fa-solid fa-moon" onmouseover="moonf()"><h5 style="margin-left: 38%;">moon</h5></i></a>
+        </nav>
+        <form action="https://www.google.com/search" method="get">
+            <input id="search" type="text" name="q" placeholder="Search">
+        </form>
+    </header>
+        <main>
+            <section>
+                <h1>The Moon</h1>
+                <h4>Moon, Earth’s sole natural satellite and nearest large celestial body. Known since prehistoric times, it is the brightest object in the sky after the Sun. It is designated by the symbol ☽. Its name in English, like that of Earth, is of Germanic and Old English derivation.</h4>
+                <model-viewer src="./planets/moon.glb" camera-controls></model-viewer>
+               <div class="information">
+               <p>The Moon’s desolate beauty has been a source of fascination and curiosity throughout history and has inspired a rich cultural and symbolic tradition. In past civilizations the Moon was regarded as a deity, its dominion dramatically manifested in its rhythmic control over the tides and the cycle of female fertility. Ancient lore and legend tell of the power of the Moon to instill spells with magic, to transform humans into beasts, and to send people’s behaviour swaying perilously between sanity and lunacy (from the Latin luna, “Moon”). Poets and composers were invoking the Moon’s romantic charms and its darker side, and writers of fiction were conducting their readers on speculative lunar journeys long before Apollo astronauts, in orbit above the Moon, sent back photographs of the reality that human eyes were witnessing for the first time.</p>
+                <h2>Distinctive features</h2>
+                <p>The Moon is a spherical rocky body, probably with a small metallic core, revolving around Earth in a slightly eccentric orbit at a mean distance of about 384,000 km (238,600 miles). Its equatorial radius is 1,738 km (1,080 miles), and its shape is slightly flattened in a such a way that it bulges a little in the direction of Earth. Its mass distribution is not uniform—the centre of mass is displaced about 2 km (1.2 miles) toward Earth relative to the centre of the lunar sphere, and it also has surface mass concentrations, called mascons for short, that cause the Moon’s gravitational field to increase over local areas. The Moon has no global magnetic field like that of Earth, but some of its surface rocks have remanent magnetism, which indicates one or more periods of magnetic activity in the past. The Moon presently has very slight seismic activity and little heat flow from the interior, indications that most internal activity ceased long ago.
+                </p>
+                <h2>Motions of the Moon</h2>
+                <p>The study of the Moon’s motions has been central to the growth of knowledge not only about the Moon itself but also about fundamentals of celestial mechanics and physics. As the stars appear to move westward because of Earth’s daily rotation and its annual motion about the Sun, so the Moon slowly moves eastward, rising later each day and passing through its phases: new, first quarter, full, last quarter, and new again each month. The long-running Chinese, Chaldean, and Mayan calendars were attempts to reconcile these repetitive but incommensurate movements. From the time of the Babylonian astrologers and the Greek astronomers up to the present, investigators looked for small departures from the motions predicted. The English physicist Isaac Newton used lunar observations in developing his theory of gravitation in the late 17th century, and he was able to show some effects of solar gravity in perturbing the Moon’s motion. By the 18th and 19th centuries the mathematical study of lunar movements, both orbital and rotational, was advancing, driven in part by the need for precise tables of the predicted positions of celestial bodies (ephemerides) for navigation. While theory developed with improved observations, many small and puzzling discrepancies continued to appear. It gradually became evident that some arise from irregularities in Earth’s rotation rate, others from minor tidal effects on Earth and the Moon.</p>
+               <div class="video"> <iframe width="560" height="315" src="https://www.youtube.com/embed/6AviDjR9mmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            </div>
+            </section>
+        </main>
+    <footer>
+        <a href="https://gomycode.com/TN-FR/home" class="gomycodeLogo"><img src="https://gomycodelearn.blob.core.windows.net/assets/images/general/gomycodeLogo.svg" alt="gomycodelearn"></a>
+        <div class="linksoffooter">
+        <a href="mailto:hassenlamine3@gmail.com"><img src="./img/gmail.png" alt="email"></a>
+        <a href="https://github.com/MouhamedHassenLamine"><img src="./img/github.png" alt="githib"></a>
+        <a href="https://twitter.com/hassen_lamine"><img src="./img/twiter.png" alt="twitter"></a>
+        <p class="poffooter">privacy policy</p>
+        <p class="poffooter">©2023 final project</p>
+    </div>
+    </footer>
+    <script src="js.js"></script>
+    <script>for(let i=0;i<pofcircle.length;i++){
+        pofcircle[i].style.display= i === 3? 'block':'none'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+        rel="icon"
+        href="https://icon-library.com/images/galaxy-icon-png/galaxy-icon-png-14.jpg"
+      />
+    <title>Document</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./img/to-the-galaxy-low-resolution-logo-color-on-transparent-background.png" alt="logo">
+        <img src="./img/burger.png" class="burger" onclick="burgeron()">
+        <nav style="display: none;">
+            <div class="circle" style="left: 58%;">
+                <p class="pofcircle">Home</p>
+                <p class="pofcircle">Sun</p>
+                <p class="pofcircle">Earth</p>
+                <p class="pofcircle">Moon</p>
+                </div>
+            <a class="aofnav" href="./index.html"><i class="fa-solid fa-house" onmouseover="homef()"><h5>Home</h5></i></a>
+            <a class="aofnav" href="./sun.html"><i class="fa-solid fa-sun" onmouseover="sunf()"><h5 style="margin-left: 60%;">sun</h5></i></a>
+            <a class="aofnav" href="./earth.html"><i class="fa-solid fa-earth-americas" onmouseover="earthf()"><h5>earth</h5></i></a>
+            <a class="aofnav" href="./moon.html"><i class="fa-solid fa-moon" onmouseover="moonf()"><h5 style="margin-left: 38%;">moon</h5></i></a>
+        </nav>
+        <form action="https://www.google.com/search" method="get">
+            <input id="search" type="text" name="q" placeholder="Search">
+        </form>
+    </header>
+        <main>
+            <section>
+                <h1>The earth</h1>
+                <h4>Earth, our wonderful world! But how much do you know about the planet we call home? Let’s find out with our fascinating facts about the Earth…</h4>
+                <model-viewer src="planets\earth.glb" camera-controls></model-viewer>
+               <div class="information">
+               <p>Earth is rounded into an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive. Earth is about eight light-minutes away from the Sun and orbits it, taking a year (about 365.25 days) to complete one revolution.</p>
+                <h2>Many layers, many features</h2>
+                <p>About 4.5 billion years ago, gravity coaxed Earth to form from the gaseous, dusty disk that surrounded our young sun. Over time, Earth's interior—which is made mostly of silicate rocks and metals—differentiated into four layers.
+                    At the planet's heart lies the inner core, a solid sphere of iron and nickel that's 759 miles wide and as hot as 9,800 degrees Fahrenheit. The inner core is surrounded by the outer core, a 1,400-mile-thick band of iron and nickel fluids. Beyond the outer core lies the mantle, a 1,800-mile-thick layer of viscous molten rock on which Earth's outermost layer, the crust, rests. On land, the continental crust is an average of 19 miles thick, but the oceanic crust that forms the seafloor is thinner—about three miles thick—and denser.</p>
+                <h2>Protective fields and gases</h2>
+                <p>Earth's atmosphere is 78 percent nitrogen, 21 percent oxygen, and one percent other gases such as carbon dioxide, water vapor, and argon. Much like a greenhouse, this blanket of gases absorbs and retains heat. On average, Earth's surface temperature is about 57 degrees Fahrenheit; without our atmosphere, it'd be zero degrees. In the last two centuries, humans have added enough greenhouse gases to the atmosphere to raise Earth's average temperature by 1.8 degrees Fahrenheit. This extra heat has altered Earth's weather patterns in many ways.
+
+                    The atmosphere not only nourishes life on Earth, but it also protects it: It's thick enough that many meteorites burn up before impact from friction, and its gases—such as ozone—block DNA-damaging ultraviolet light from reaching the surface. But for all that our atmosphere does, it's surprisingly thin. Ninety percent of Earth's atmosphere lies within just 10 miles of the planet's surface.</p>
+               <div class="video"> <iframe width="560" height="315" src="https://www.youtube.com/embed/HCDVN7DCzYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            </div>
+            </section>
+        </main>
+    <footer>
+        <a href="https://gomycode.com/TN-FR/home" class="gomycodeLogo"><img src="https://gomycodelearn.blob.core.windows.net/assets/images/general/gomycodeLogo.svg" alt="gomycodelearn"></a>
+        <div class="linksoffooter">
+        <a href="mailto:hassenlamine3@gmail.com"><img src="./img/gmail.png" alt="email"></a>
+        <a href="https://github.com/MouhamedHassenLamine"><img src="./img/github.png" alt="githib"></a>
+        <a href="https://twitter.com/hassen_lamine"><img src="./img/twiter.png" alt="twitter"></a>
+        <p class="poffooter">privacy policy</p>
+        <p class="poffooter">©2023 final project</p>
+    </div>
+    </footer>
+    <script src="js.js"></script>
+    <script>for(let i=0;i<pofcircle.length;i++){
+        pofcircle[i].style.display= i === 2? 'block':'none'
+        }
+    </script>
+</body>
+</html>
